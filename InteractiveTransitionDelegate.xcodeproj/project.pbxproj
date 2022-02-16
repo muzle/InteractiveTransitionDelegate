@@ -11,6 +11,16 @@
 		2F7734CE27BD418E00405045 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7734CD27BD418E00405045 /* ViewController.swift */; };
 		2F7734D327BD418F00405045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F7734D227BD418F00405045 /* Assets.xcassets */; };
 		2F7734D627BD418F00405045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F7734D427BD418F00405045 /* LaunchScreen.storyboard */; };
+		2F7734DF27BD433700405045 /* AnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7734DE27BD433700405045 /* AnimatedTransitioning.swift */; };
+		2F7734E127BD435900405045 /* TransitioningAnimationDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7734E027BD435900405045 /* TransitioningAnimationDirection.swift */; };
+		2F7734E327BD442F00405045 /* TransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7734E227BD442F00405045 /* TransitionController.swift */; };
+		2F7734E527BD448B00405045 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7734E427BD448B00405045 /* TransitionManager.swift */; };
+		2F7734E927BD458C00405045 /* NSObject+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7734E827BD458C00405045 /* NSObject+extension.swift */; };
+		2F7734EB27BD462300405045 /* CustomPresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7734EA27BD462300405045 /* CustomPresentedViewController.swift */; };
+		2F7734ED27BD492400405045 /* CGPoint+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7734EC27BD492400405045 /* CGPoint+extension.swift */; };
+		2F7734EF27BD4AB300405045 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7734EE27BD4AB300405045 /* ScrollViewController.swift */; };
+		2F7734F127BD4C2100405045 /* TransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7734F027BD4C2100405045 /* TransitionDelegate.swift */; };
+		2F7734F427BD4F5F00405045 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7734F327BD4F5F00405045 /* PageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +30,16 @@
 		2F7734D227BD418F00405045 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F7734D527BD418F00405045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F7734D727BD418F00405045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F7734DE27BD433700405045 /* AnimatedTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTransitioning.swift; sourceTree = "<group>"; };
+		2F7734E027BD435900405045 /* TransitioningAnimationDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitioningAnimationDirection.swift; sourceTree = "<group>"; };
+		2F7734E227BD442F00405045 /* TransitionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionController.swift; sourceTree = "<group>"; };
+		2F7734E427BD448B00405045 /* TransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
+		2F7734E827BD458C00405045 /* NSObject+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+extension.swift"; sourceTree = "<group>"; };
+		2F7734EA27BD462300405045 /* CustomPresentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPresentedViewController.swift; sourceTree = "<group>"; };
+		2F7734EC27BD492400405045 /* CGPoint+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+extension.swift"; sourceTree = "<group>"; };
+		2F7734EE27BD4AB300405045 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		2F7734F027BD4C2100405045 /* TransitionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionDelegate.swift; sourceTree = "<group>"; };
+		2F7734F327BD4F5F00405045 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +72,55 @@
 		2F7734C827BD418E00405045 /* InteractiveTransitionDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				2F7734DD27BD42FE00405045 /* CustomTransitionSupport */,
+				2F7734F227BD4F4C00405045 /* ViewControllers */,
+				2F7734E627BD455300405045 /* Extension */,
+				2F7734E727BD456200405045 /* SupportedFiles */,
+			);
+			path = InteractiveTransitionDelegate;
+			sourceTree = "<group>";
+		};
+		2F7734DD27BD42FE00405045 /* CustomTransitionSupport */ = {
+			isa = PBXGroup;
+			children = (
+				2F7734DE27BD433700405045 /* AnimatedTransitioning.swift */,
+				2F7734E027BD435900405045 /* TransitioningAnimationDirection.swift */,
+				2F7734E227BD442F00405045 /* TransitionController.swift */,
+				2F7734E427BD448B00405045 /* TransitionManager.swift */,
+				2F7734F027BD4C2100405045 /* TransitionDelegate.swift */,
+				2F7734EA27BD462300405045 /* CustomPresentedViewController.swift */,
+			);
+			path = CustomTransitionSupport;
+			sourceTree = "<group>";
+		};
+		2F7734E627BD455300405045 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2F7734E827BD458C00405045 /* NSObject+extension.swift */,
+				2F7734EC27BD492400405045 /* CGPoint+extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		2F7734E727BD456200405045 /* SupportedFiles */ = {
+			isa = PBXGroup;
+			children = (
 				2F7734C927BD418E00405045 /* AppDelegate.swift */,
-				2F7734CD27BD418E00405045 /* ViewController.swift */,
 				2F7734D227BD418F00405045 /* Assets.xcassets */,
 				2F7734D427BD418F00405045 /* LaunchScreen.storyboard */,
 				2F7734D727BD418F00405045 /* Info.plist */,
 			);
-			path = InteractiveTransitionDelegate;
+			path = SupportedFiles;
+			sourceTree = "<group>";
+		};
+		2F7734F227BD4F4C00405045 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2F7734CD27BD418E00405045 /* ViewController.swift */,
+				2F7734F327BD4F5F00405045 /* PageViewController.swift */,
+				2F7734EE27BD4AB300405045 /* ScrollViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,8 +193,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F7734E527BD448B00405045 /* TransitionManager.swift in Sources */,
 				2F7734CE27BD418E00405045 /* ViewController.swift in Sources */,
+				2F7734EB27BD462300405045 /* CustomPresentedViewController.swift in Sources */,
+				2F7734F427BD4F5F00405045 /* PageViewController.swift in Sources */,
 				2F7734CA27BD418E00405045 /* AppDelegate.swift in Sources */,
+				2F7734ED27BD492400405045 /* CGPoint+extension.swift in Sources */,
+				2F7734E127BD435900405045 /* TransitioningAnimationDirection.swift in Sources */,
+				2F7734E927BD458C00405045 /* NSObject+extension.swift in Sources */,
+				2F7734F127BD4C2100405045 /* TransitionDelegate.swift in Sources */,
+				2F7734EF27BD4AB300405045 /* ScrollViewController.swift in Sources */,
+				2F7734E327BD442F00405045 /* TransitionController.swift in Sources */,
+				2F7734DF27BD433700405045 /* AnimatedTransitioning.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +347,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GHXPN8A4H7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = InteractiveTransitionDelegate/Info.plist;
+				INFOPLIST_FILE = InteractiveTransitionDelegate/SupportedFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -302,7 +374,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GHXPN8A4H7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = InteractiveTransitionDelegate/Info.plist;
+				INFOPLIST_FILE = InteractiveTransitionDelegate/SupportedFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
